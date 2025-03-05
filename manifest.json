@@ -1,0 +1,17 @@
+{
+  "name": "舔狗日记",
+  "short_name": "舔狗日记",
+  "description": "恋爱养成游戏",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffd1dc",
+  "theme_color": "#ff69b4",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>舔狗日记 - 恋爱养成游戏</title>
+    <link rel="manifest" href="manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="舔狗日记">
+    <link rel="apple-touch-icon" href="icon.png">
+    <meta name="theme-color" content="#ff69b4">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <h1>舔狗日记</h1>
+            <div class="stats-container">
+                <div class="stat" id="day-counter">第 1 天</div>
+                <div class="hearts-container">
+                    <div class="heart-stat">
+                        <span class="heart-name">Hxz:</span>
+                        <div class="heart-meter">
+                            <div class="heart-fill" id="hxz-heart" style="width: 0%"></div>
+                        </div>
+                        <span class="heart-value" id="hxz-value">0%</span>
+                    </div>
+                    <div class="heart-stat">
+                        <span class="heart-name">Lzw:</span>
+                        <div class="heart-meter">
+                            <div class="heart-fill" id="lzw-heart" style="width: 0%"></div>
+                        </div>
+                        <span class="heart-value" id="lzw-value">0%</span>
+                    </div>
+                    <div class="heart-stat">
+                        <span class="heart-name">Lkw:</span>
+                        <div class="heart-meter">
+                            <div class="heart-fill" id="lkw-heart" style="width: 0%"></div>
+                        </div>
+                        <span class="heart-value" id="lkw-value">0%</span>
+                    </div>
+                </div>
+                <div class="attributes-container">
+                    <div class="attribute">
+                        <span>智慧:</span>
+                        <span id="智慧-value">50</span>
+                    </div>
+                    <div class="attribute">
+                        <span>魅力:</span>
+                        <span id="魅力-value">50</span>
+                    </div>
+                    <div class="attribute">
+                        <span>体力:</span>
+                        <span id="体力-value">50</span>
+                    </div>
+                    <div class="attribute">
+                        <span>心情:</span>
+                        <span id="心情-value">50</span>
+                    </div>
+                    <div class="attribute">
+                        <span>金钱:</span>
+                        <span id="money-value">1000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-content">
+            <div id="story-container">
+                <p>欢迎来到舔狗日记！在这个游戏中，你将操控女主角WM的选择。</p>
+                <p>三位追求者Hxz、Lzw和Lkw都在追求WM，你的每个选择都会影响他们对WM的好感度。</p>
+                <p>游戏中WM有四个属性：智慧、魅力、体力和心情，某些选项需要达到特定属性值才能选择。</p>
+                <p>WM还有1000元的零花钱，可以通过打工赚钱，某些选项需要花费金钱。</p>
+                <p>当某个人的好感度达到100%时，WM将会与他结婚！</p>
+                <p>点击"开始游戏"按钮开始WM的恋爱之旅吧！</p>
+            </div>
+            
+            <div id="choices-container">
+                <button id="start-button" class="choice-button">开始游戏</button>
+            </div>
+        </div>
+
+        <div id="result-screen" class="hidden">
+            <h2 id="result-title"></h2>
+            <p id="result-text"></p>
+            <button id="restart-button">重新开始</button>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
